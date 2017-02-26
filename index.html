@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>daniMirror App</title>
+	<link rel="stylesheet" href="main.css" />
+	<script src="libs/jquery-3.1.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body onload="init()">
+	<div id="header">
+		<h2 id="title-text">Hello there :)</h2>
+	</div>
+
+	<div id="weather-div">
+		<h3 id='weather-title'>Current weather in...</h3>
+		<img id="weather-icon" src="http://icons-ak.wxug.com/i/c/k/partlycloudy.gif" id="header-icon" height="100" width="120" />
+		<h3 id='weather-text'>...</h3>
+		<h3>Today's Forecast:</h3>
+		<h3 id='forecast-text'>...</h3>
+</div>
+
+<iframe id='internet-clock' src="http://free.timeanddate.com/clock/i5lvkzmv/n224/fn6/fs20/fc0f0/tc000/ftbi/bas2/bat1/bacfff/pa8/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="237" height="68"></iframe>
+
+
+	<div id="main">
+		<div id="category-column" class="myColumn">
+			<h4 class="column-title">Categories</h4>
+			<div id="button-list" class="myList"></div>
+		</div>
+		<div id="activity-column" class="myColumn">
+			<h4 class="column-title">Activities</h4>
+			<div id="activities-list" class="myList"></div>
+		</div>
+
+		<div id="selected-column" class="myColumn">
+			<h4 class="column-title" id="selected-title">My Activities</h4>
+			<div id="selected-list" class="myList" style="height: calc(100% - 150px);"></div>
+			<button id="submit-button" class="myButton" onclick="submitActivities()">Submit</button>
+
+		</div>
+
+		<!-- <div id="submit-div" class="myColumn">
+			<button id="submit-button" class="myButton" onclick="submitActivities()">Submit</button>
+		</div> -->
+	</div>
+</body>
