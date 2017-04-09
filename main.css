@@ -16,10 +16,19 @@ body {
   padding: 1.875rem;
 }
 
+.weather-container {
+  display: inline-block;
+  position: absolute;
+  top: 1.875rem;
+  left: 1.875rem;
+  font-weight: 200;
+}
+
 h1 {
   font-size: 50px;
   font-weight: 200;
   margin: 0;
+  text-align: center;
 }
 
 .time-container {
@@ -31,38 +40,21 @@ h1 {
   font-weight: 200;
 }
 
-#clock span {
-  display: inline-block;
-}
-
-.time-container #time {
+.time-container #time,
+.weather-container #temp {
   font-size: 48px;
-  margin-right: 5px;
 }
 
-.time-container #date {
+.time-container #date,
+.weather-container #minmax {
   font-size: 16px;
   font-weight: 400;
 }
 
-.time-container #dow,
-.time-container #tz,
-.time-container #seconds {
+.time-container #day,
+.weather-container #location {
   font-size: 12px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: .15em;
-}
-
-#weather-div{
-  height: 120px;
-  color: white;
-  margin-left: 50px;
-  width: 50%;
-  float: left;
-}
-
-#main{
-  margin: 0 2% 0 2%;
-  width: 96%;
 }
